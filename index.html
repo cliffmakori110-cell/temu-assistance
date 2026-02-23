@@ -25,7 +25,7 @@ body{
 }
 
 .logo{
-    font-size:24px;
+    font-size:30px;
     font-weight:bold;
     color:#ff4d00;
 }
@@ -41,20 +41,17 @@ body{
     color:#ff4d00;
 }
 
-/* ===== HERO BANNER RESPONSIVE ===== */
+/* ===== HERO BANNER ===== */
 .contact-hero{
-    background:url('vvbd.png') no-repeat center center;
-    background-size:cover;
-    min-height:420px; /* flexible height */
+    background:url('vvbd.png') center/cover no-repeat;
+    height:320px;
     display:flex;
     align-items:center;
     justify-content:flex-start;
     position:relative;
     color:#fff;
-    padding:60px 0;
 }
 
-/* overlay */
 .contact-hero::before{
     content:"";
     position:absolute;
@@ -65,9 +62,8 @@ body{
 .hero-content{
     position:relative;
     z-index:2;
-    max-width:1100px;
     padding-left:80px;
-    padding-right:20px;
+    max-width:1100px;
 }
 
 .hero-content h1{
@@ -172,28 +168,24 @@ body{
     color:#aaa;
 }
 
-/* ===== MOBILE FIX ===== */
-@media (max-width:768px){
+/* ===== MOBILE ===== */
+@media(max-width:768px){
 
-.contact-hero{
-    min-height:320px;
-    background-position:center center;
-    padding:40px 0;
+.header{
+    padding:15px 20px;
 }
 
 .hero-content{
     padding-left:20px;
-    padding-right:20px;
-    text-align:center;
-    width:100%;
 }
 
 .hero-content h1{
-    font-size:28px;
+    font-size:30px;
 }
 
-.hero-content p{
-    font-size:16px;
+.support-info{
+    flex-direction:column;
+    align-items:center;
 }
 
 }
@@ -283,13 +275,13 @@ body{
         <div>
             <h3>Contact</h3>
             <p>Toll Free: +1 888 348 2485</p>
-            <p>Email: support@temu.com</p>
+            <p>Email: support@example.com</p>
         </div>
 
     </div>
 
     <div class="footer-bottom">
-        © 2026 Temo Store. All Rights Reserved.
+        © 2026 Temu Store. All Rights Reserved.
     </div>
 
 </footer>
